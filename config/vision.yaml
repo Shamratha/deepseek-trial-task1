@@ -1,0 +1,7 @@
+# Set model only after the operator confirms one fixed cheap OpenRouter vision model.
+model: null
+base_url: https://openrouter.ai/api/v1
+api_key_env: VISION_OPENROUTER_API_KEY
+bind: 127.0.0.1
+port: 8765
+

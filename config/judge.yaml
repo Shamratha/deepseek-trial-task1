@@ -1,0 +1,9 @@
+mode: athena
+athena:
+  base_url_env: ATHENA_BASE_URL
+  api_key_env: ATHENA_API_KEY
+  model_env: ATHENA_MODEL
+gemini:
+  api_key_env: GEMINI_API_KEY
+  model: gemini-3.7-flash
+

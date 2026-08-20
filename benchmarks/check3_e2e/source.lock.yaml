@@ -1,0 +1,10 @@
+ready: false
+field: null
+owner: null
+repo: null
+ref: null
+seed: null
+run_command: null
+verify_command: null
+timeout_seconds: null
+notes: null

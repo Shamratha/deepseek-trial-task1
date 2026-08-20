@@ -1,0 +1,22 @@
+[project]
+name = "deepseek-v4-harness-eval"
+version = "0.1.0"
+description = "Reproducible three-arm harness evaluation infrastructure"
+requires-python = ">=3.11"
+dependencies = [
+  "openpyxl==3.1.5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.5"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.setuptools]
+py-modules = ["infra_lib"]
+
+[tool.setuptools.packages.find]
+include = ["graders*"]
+

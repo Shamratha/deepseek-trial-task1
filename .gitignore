@@ -1,0 +1,14 @@
+config/.env.local
+state/
+workspaces/
+runs/
+packages/
+*.secret
+*.token
+auth.json
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.DS_Store

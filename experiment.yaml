@@ -1,0 +1,41 @@
+experiment:
+  name: deepseek-v4-flash-0731-harness-eval
+  assignment: toby
+  measured_arms:
+    - control_native_codex
+    - exp_codexcli_deepseek
+    - exp_claudecode_deepseek
+model:
+  deepseek: deepseek/deepseek-v4-flash-0731
+arms:
+  control_native_codex:
+    harness: codex_cli
+    provider: native_subscription
+    model: native_default
+    proxy_allowed: false
+  exp_codexcli_deepseek:
+    harness: codex_cli
+    provider: openrouter
+    model: deepseek/deepseek-v4-flash-0731
+  exp_claudecode_deepseek:
+    harness: claude_code
+    provider: openrouter
+    model: deepseek/deepseek-v4-flash-0731
+checks:
+  check1:
+    name: text_excel_artifact
+    timeout_seconds: 3600
+    vision_enabled: false
+  check2:
+    name: graphs_web_images_artifact
+    timeout_seconds: 3600
+    vision_enabled: true
+  check3:
+    name: jobbench_or_openclaw_e2e
+    timeout_seconds: null
+    requires_external_lock: true
+judge:
+  preferred: athena
+  fallback: gemini-3.7-flash
+  blind: true
+

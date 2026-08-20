@@ -1,0 +1,17 @@
+{
+  "columns": [
+    "month",
+    "destination",
+    "region",
+    "bookings",
+    "gross_revenue",
+    "refunds",
+    "marketing_spend",
+    "customer_rating",
+    "cancellations",
+    "avg_trip_days"
+  ],
+  "generator_seed": 20260820,
+  "rows": 96,
+  "sha256": "0f29f24f6f326b7ebca146603c018e6c76fcf080298572b2c18dec8dea0d0a4a"
+}

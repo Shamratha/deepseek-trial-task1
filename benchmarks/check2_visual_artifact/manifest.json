@@ -1,0 +1,39 @@
+{
+  "generator_seed": 20260820,
+  "image_candidates": [
+    {
+      "mime": "image/jpeg",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Paris_Night.jpg",
+      "verified": true
+    },
+    {
+      "mime": "image/jpeg",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tokyo_Tower_and_around_Skyscrapers.jpg",
+      "verified": true
+    },
+    {
+      "mime": "image/jpeg",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sydney_Opera_House_Sails.jpg",
+      "verified": true
+    },
+    {
+      "mime": "image/jpeg",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/New_York_City_at_night_HDR.jpg",
+      "verified": true
+    },
+    {
+      "mime": "image/jpeg",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cape_Town_(ZA),_Table_Mountain_--_2024_--_2825.jpg",
+      "verified": true
+    },
+    {
+      "mime": "image/jpeg",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Rio_de_Janeiro_Helicoptero_47_Feb_2006.jpg",
+      "verified": true
+    }
+  ],
+  "image_candidates_verified_utc": "2026-08-20",
+  "rows": 96,
+  "sha256": "0f29f24f6f326b7ebca146603c018e6c76fcf080298572b2c18dec8dea0d0a4a",
+  "shared_dataset_with": "check1"
+}
