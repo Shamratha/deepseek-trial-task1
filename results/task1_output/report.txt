@@ -1,0 +1,58 @@
+DESTINATION PERFORMANCE — MANAGEMENT EXECUTIVE SUMMARY (FY2025)
+
+Overview
+- Total bookings: 116,620 with gross revenue of $162.30M across 12 destinations and 12 months.
+- Revenue per booking averages $1,392; the portfolio generates $6.64 of revenue for every $1 of
+  marketing spend, with refund exposure of 2.7% of revenue and cancellation risk at 6.4% of bookings.
+
+Growth and Profitability
+- The market is meaningfully seasonal: monthly revenue peaks in April ($18.0M) and March ($17.0M),
+  troughs October ($9.4M), and recovers modestly in December ($11.5M). Booking volumes follow the
+  same shape (10.0k Jan -> 12.7k Apr -> 6.7k Oct -> 8.3k Dec).
+- Highest-yield destinations by revenue per booking: Vancouver ($1,878), Cape Town ($1,786),
+  Singapore ($1,639), and New York ($1,571). These justify premium positioning.
+- Highest absolute revenue contributors: Vancouver ($24.0M), Singapore ($19.3M), and Queenstown
+  ($18.9M). Together they account for 38% of total revenue, making them the growth anchors.
+- Paris underperforms on yield ($919 per booking) with the lowest bookings (5,176) and highest
+  marketing intensity (24.8% of revenue), signaling an efficiency problem rather than demand.
+
+Refund and Cancellation Risk
+- Refund rates vary ~2.3x across destinations: Queenstown (3.8%), Barcelona (3.7%) and New York
+  (3.6%) are the highest; Paris, Cape Town, and Singapore are the lowest (1.6%).
+- Cancellation rates tell the same story — Barcelona (8.5%), New York (8.6%) and Queenstown (8.3%)
+  cancel at roughly double the rate of Cape Town (4.1%), Singapore (4.0%), or Paris (3.9%).
+- Estimated exposure: $4.37M in refunds and 7,438 lost bookings annually. Prioritizing booking
+  mechanics (deposits, flexible rebooking windows) in Queenstown, Barcelona, and New York could
+  recover 0.8-1.0 points of revenue margin.
+
+Marketing Efficiency
+- Portfolio marketing spend totals $24.4M (15.0% of revenue); the blended ratio is efficient but
+  uneven.
+- Star performers: Vancouver (10.8% of revenue), Cape Town (12.0%), Singapore (12.7%).
+- Underperformers: Paris (24.8%), Rio de Janeiro (21.4%), Tokyo (19.4%), Marrakech (18.3%) — all
+  above 18% of revenue, suggesting either early-stage demand building or spend leakage.
+- Reallocating 5 points of marketing mix from Paris/Rio/Tokyo to Cape Town/Vancouver/Singapore
+  would redirect roughly $1.6-2.4M annually toward higher-yield, lower-risk routes.
+
+Customer Experience
+- Ratings are generally healthy (4.27-4.60). Cape Town (4.27) and Vancouver (4.28) trail the
+  portfolio despite strong yield, signaling experience gaps that may cap repeat business.
+- Trip lengths vary from 3.5 (Singapore) to 5.6 days (New York); long-haul, high-yield routes
+  (Vancouver 5.1, New York 5.6) support price premiums but also raise cancellation exposure.
+
+Tradeoffs and Risks
+- Revenue concentration: Vancouver + Singapore + Queenstown = 38% of revenue; a disruption in any
+  one (weather, air capacity, geopolitics) hits the portfolio disproportionately.
+- High-yield, low-rating pairs (Cape Town, Vancouver) risk losing share if experience quality is
+  not addressed before competitors invest.
+- Seasonal trough (Sep-Oct) creates cash-flow and staffing risk; shoulder-season campaigns and
+  off-peak pricing should be evaluated before the peak-year planning cycle.
+
+Recommendations (highest-leverage actions)
+1. Shift marketing to Vancouver, Cape Town, Singapore; cap Paris/Rio/Tokyo spend until efficiency
+   improves.
+2. Target refund/cancellation behavior in Queenstown, Barcelona, New York with deposit and
+   rebooking policy changes (est. +0.8-1.0 pt margin).
+3. Protect the 3 growth anchors against concentration risk via inventory and airlift planning.
+4. Fix experience gaps in Cape Town and Vancouver (rating uplift of +0.3 would support premium
+   pricing and repeat travel).

@@ -9,12 +9,13 @@ import math
 import random
 from pathlib import Path
 
-SEED = 20260820
+SEED = 20260731
 DESTINATIONS = [
     ("Paris", "Europe"), ("Tokyo", "Asia"), ("Sydney", "Oceania"),
     ("New York", "North America"), ("Cape Town", "Africa"),
     ("Rio de Janeiro", "South America"), ("Dubai", "Middle East"),
-    ("Barcelona", "Europe"),
+    ("Barcelona", "Europe"), ("Singapore", "Asia"), ("Vancouver", "North America"),
+    ("Marrakech", "Africa"), ("Queenstown", "Oceania"),
 ]
 FIELDS = ["month", "destination", "region", "bookings", "gross_revenue",
           "refunds", "marketing_spend", "customer_rating", "cancellations",
@@ -26,18 +27,19 @@ def generate(output: Path) -> None:
     output.mkdir(parents=True, exist_ok=True)
     rows = []
     for di, (destination, region) in enumerate(DESTINATIONS):
-        base = 650 + di * 63
-        price = 1080 + di * 92
+        base = 420 + di * 71
+        price = 920 + (di % 5) * 215 + 90 * (di // 5)
+        longhaul = 1.5 if di % 3 == 0 else (0.9 if di % 3 == 1 else 0.0)
+        tier = 0.04 if di % 4 == 0 else (0.055 if di % 4 == 1 else (0.07 if di % 4 == 2 else 0.085))
         for month in range(1, 13):
-            seasonal = 1 + 0.23 * math.sin((month - 2 + di % 3) * math.pi / 6)
-            bookings = max(100, round(base * seasonal + rng.gauss(0, 32)))
-            revenue = round(bookings * (price + rng.gauss(0, 35)), 2)
-            cancel_rate = 0.045 + (di % 4) * 0.009 + rng.uniform(-0.006, 0.006)
-            cancellations = max(0, round(bookings * cancel_rate))
-            refunds = round(revenue * (0.018 + di % 3 * 0.006 + rng.uniform(0, 0.006)), 2)
-            marketing = round((135000 + di * 9000) * (0.9 + month / 50) + rng.gauss(0, 4500), 2)
-            rating = round(min(5, max(3.3, 4.62 - di * 0.045 + rng.uniform(-0.12, 0.12))), 2)
-            trip_days = round(4.4 + di * 0.37 + rng.uniform(-0.35, 0.35), 1)
+            seasonal = 1 + 0.33 * math.sin((month - 2 + di % 3) * math.pi / 6)
+            bookings = max(120, round(base * seasonal + rng.gauss(0, 38)))
+            revenue = round(bookings * (price + rng.gauss(0, 42)), 2)
+            refunds = round(revenue * (0.014 + (di % 4) * 0.007 + rng.uniform(0, 0.004)), 2)
+            marketing = round((92000 + di * 12400) * (0.92 + month / 46) + rng.gauss(0, 4200), 2)
+            rating = round(min(5, max(3.2, 4.58 - (di % 5) * 0.07 + rng.uniform(-0.11, 0.11))), 2)
+            cancellations = max(0, round(bookings * (tier + rng.uniform(-0.004, 0.004))))
+            trip_days = round(3.4 + longhaul + (di % 4) * 0.22 + rng.uniform(-0.3, 0.3), 1)
             rows.append({
                 "month": f"2025-{month:02d}", "destination": destination,
                 "region": region, "bookings": bookings,
@@ -64,4 +66,3 @@ def generate(output: Path) -> None:
 
 if __name__ == "__main__":
     generate(Path(__file__).resolve().parent / "input")
-

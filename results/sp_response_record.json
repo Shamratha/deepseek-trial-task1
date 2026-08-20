@@ -1,0 +1,341 @@
+{
+  "matrix-20260820T124825Z-bb2c94": {
+    "control_native_codex": {
+      "arm": "control_native_codex",
+      "end": {
+        "end_utc": "2026-08-20T12:48:32.986548Z",
+        "exit_code": 1,
+        "start_utc": "2026-08-20T12:48:25.359643Z",
+        "timed_out": false,
+        "timeout_seconds": 3600,
+        "wall_seconds": 7.62688283
+      },
+      "exit_code": "1",
+      "final_response": null,
+      "manifest": {
+        "arm": "control_native_codex",
+        "check_id": "check1",
+        "configured_model": "native_default",
+        "created_utc": "2026-08-20T12:48:25.357593Z",
+        "run_id": "matrix-20260820T124825Z-bb2c94",
+        "task_sha256": "d7a66da607bb0209b79d524cddfbd78d307aa22a9d6d5cfa8bdfe30fa6f4c1dc"
+      },
+      "output_files": [],
+      "run_id": "matrix-20260820T124825Z-bb2c94",
+      "start": {
+        "start_utc": "2026-08-20T12:48:25.358624Z",
+        "timeout_seconds": 3600
+      },
+      "usage": {
+        "actual_model": null,
+        "cache_creation_input_tokens": null,
+        "cached_input_tokens": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "reasoning_output_tokens": null,
+        "reported_cost_usd": null,
+        "total_tokens": null
+      },
+      "verifier": {
+        "checks": {
+          "exact_deliverables": false,
+          "report_present": false,
+          "workbook_present": false
+        },
+        "errors": [
+          "analysis.xlsx missing"
+        ],
+        "pass": false,
+        "score": 0
+      }
+    },
+    "exp_claudecode_deepseek": {
+      "arm": "exp_claudecode_deepseek",
+      "end": {
+        "end_utc": "2026-08-20T12:48:45.604802Z",
+        "exit_code": 0,
+        "start_utc": "2026-08-20T12:48:25.359857Z",
+        "timed_out": false,
+        "timeout_seconds": 3600,
+        "wall_seconds": 20.244928166
+      },
+      "exit_code": "0",
+      "final_response": null,
+      "manifest": {
+        "arm": "exp_claudecode_deepseek",
+        "check_id": "check1",
+        "configured_model": "deepseek/deepseek-v4-flash-0731",
+        "created_utc": "2026-08-20T12:48:25.358056Z",
+        "run_id": "matrix-20260820T124825Z-bb2c94",
+        "task_sha256": "d7a66da607bb0209b79d524cddfbd78d307aa22a9d6d5cfa8bdfe30fa6f4c1dc"
+      },
+      "output_files": [],
+      "run_id": "matrix-20260820T124825Z-bb2c94",
+      "start": {
+        "start_utc": "2026-08-20T12:48:25.359073Z",
+        "timeout_seconds": 3600
+      },
+      "usage": {
+        "actual_model": "deepseek/deepseek-v4-flash-0731",
+        "cache_creation_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 52127,
+        "output_tokens": 867,
+        "reasoning_output_tokens": null,
+        "reported_cost_usd": 0.28231,
+        "total_tokens": null
+      },
+      "verifier": {
+        "checks": {
+          "exact_deliverables": false,
+          "report_present": false,
+          "workbook_present": false
+        },
+        "errors": [
+          "analysis.xlsx missing"
+        ],
+        "pass": false,
+        "score": 0
+      }
+    },
+    "exp_codexcli_deepseek": {
+      "arm": "exp_codexcli_deepseek",
+      "end": {
+        "end_utc": "2026-08-20T13:00:51.143039Z",
+        "exit_code": 0,
+        "start_utc": "2026-08-20T12:48:25.353425Z",
+        "timed_out": false,
+        "timeout_seconds": 3600,
+        "wall_seconds": 745.78950393
+      },
+      "exit_code": "0",
+      "final_response": "Both deliverables are complete and verified under `final/`:\n\n**`final/report.txt`**\n- Concise management summary of 2025 destination performance with quantified patterns: concentration (top 4 = ~48% of gross), sharp seasonality (April peak $18.0M vs October trough $9.4M, \u221248%), inverted marketing efficiency (11.9% \u2192 19.8% H1\u2192H2), uneven refund/cancellation risk, and wide pricing gaps (Vancouver $1,878 vs Paris $919 per booking).\n- Calls out material tradeoffs/risks (concentration, marketing-demand misalignment, volume-vs-rating, margin under refund stress) plus a recommended focus.\n\n**`final/analysis.xlsx`**\n- Real workbook (not a renamed CSV) with the 4 required sheets:\n- **Raw Data** \u2014 source preserved exactly (144 rows + header) plus 5 formula-derived columns.\n- **Destination Summary** \u2014 12 destinations with SUMIFS-driven totals and computed rates/weighted ratings.\n- **Monthly Summary** \u2014 12 months with SUMIFS-driven aggregates and derived metrics.\n- **Key Metrics** \u2014 headline KPIs and seasonal/highlight metrics, all formula-based.\n\nVerification confirmed: the workbook opens cleanly in openpyxl, Raw Data matches the source exactly (0 mismatches), all summary metrics are live formulas rather than hard-coded values, and no charts/pictures/images are embedded. Both files sit directly under `final/` with no extra deliverables created.",
+      "manifest": {
+        "arm": "exp_codexcli_deepseek",
+        "check_id": "check1",
+        "configured_model": "deepseek/deepseek-v4-flash-0731",
+        "created_utc": "2026-08-20T12:48:25.353008Z",
+        "run_id": "matrix-20260820T124825Z-bb2c94",
+        "task_sha256": "d7a66da607bb0209b79d524cddfbd78d307aa22a9d6d5cfa8bdfe30fa6f4c1dc"
+      },
+      "output_files": [
+        "analysis.xlsx",
+        "report.txt"
+      ],
+      "run_id": "matrix-20260820T124825Z-bb2c94",
+      "start": {
+        "start_utc": "2026-08-20T12:48:25.353223Z",
+        "timeout_seconds": 3600
+      },
+      "usage": {
+        "actual_model": null,
+        "cache_creation_input_tokens": null,
+        "cached_input_tokens": 1224448,
+        "input_tokens": 1520414,
+        "output_tokens": 27065,
+        "reasoning_output_tokens": 4,
+        "reported_cost_usd": null,
+        "total_tokens": null
+      },
+      "verifier": {
+        "checks": {
+          "destination_summary_nontrivial": true,
+          "exact_deliverables": true,
+          "monthly_summary_nontrivial": true,
+          "no_broken_formula_refs": true,
+          "raw_headers": true,
+          "raw_row_count": true,
+          "reasonable_formula_count": true,
+          "report_present": true,
+          "required_sheets": true,
+          "source_preserved": true,
+          "workbook_present": true
+        },
+        "errors": [],
+        "formula_count": 1013,
+        "pass": true,
+        "score": 100
+      }
+    }
+  },
+  "matrix-20260820T132719Z-6a0bd4": {
+    "control_native_codex": {
+      "arm": "control_native_codex",
+      "end": {
+        "end_utc": "2026-08-20T13:36:01.212653Z",
+        "exit_code": 0,
+        "start_utc": "2026-08-20T13:27:19.920778Z",
+        "timed_out": false,
+        "timeout_seconds": 3600,
+        "wall_seconds": 521.291853649
+      },
+      "exit_code": "0",
+      "final_response": "Completed and verified:\n\n- [report.txt](/tmp/deepseek-trial.TOPavP/workspaces/check1/matrix-20260820T132719Z-6a0bd4/control_native_codex/final/report.txt)\n- [analysis.xlsx](/tmp/deepseek-trial.TOPavP/workspaces/check1/matrix-20260820T132719Z-6a0bd4/control_native_codex/final/analysis.xlsx)\n\nThe workbook reopens successfully, contains all four required sheets, preserves all 144 source rows, includes 541 formula cells, and has no charts or images. `final/` contains exactly these two files.",
+      "manifest": {
+        "arm": "control_native_codex",
+        "check_id": "check1",
+        "configured_model": "native_default",
+        "created_utc": "2026-08-20T13:27:19.920173Z",
+        "run_id": "matrix-20260820T132719Z-6a0bd4",
+        "task_sha256": "d7a66da607bb0209b79d524cddfbd78d307aa22a9d6d5cfa8bdfe30fa6f4c1dc"
+      },
+      "output_files": [
+        "analysis.xlsx",
+        "report.txt"
+      ],
+      "run_id": "matrix-20260820T132719Z-6a0bd4",
+      "start": {
+        "start_utc": "2026-08-20T13:27:19.920607Z",
+        "timeout_seconds": 3600
+      },
+      "usage": {
+        "actual_model": null,
+        "cache_creation_input_tokens": null,
+        "cached_input_tokens": 520704,
+        "input_tokens": 571668,
+        "output_tokens": 25567,
+        "reasoning_output_tokens": 7931,
+        "reported_cost_usd": null,
+        "total_tokens": null
+      },
+      "verifier": {
+        "checks": {
+          "destination_summary_nontrivial": true,
+          "exact_deliverables": true,
+          "monthly_summary_nontrivial": true,
+          "no_broken_formula_refs": true,
+          "raw_headers": true,
+          "raw_row_count": true,
+          "reasonable_formula_count": true,
+          "report_present": true,
+          "required_sheets": true,
+          "source_preserved": true,
+          "workbook_present": true
+        },
+        "errors": [],
+        "formula_count": 541,
+        "pass": true,
+        "score": 100
+      }
+    },
+    "exp_claudecode_deepseek": {
+      "arm": "exp_claudecode_deepseek",
+      "end": {
+        "end_utc": "2026-08-20T13:32:01.316629Z",
+        "exit_code": 0,
+        "start_utc": "2026-08-20T13:27:19.918698Z",
+        "timed_out": false,
+        "timeout_seconds": 3600,
+        "wall_seconds": 281.397900103
+      },
+      "exit_code": "0",
+      "final_response": "The report reads cleanly and all figures are accurate. Both deliverables are complete and verified.\n\n## Summary\n\nTwo deliverables created under `final/`:\n\n**1. `report.txt`** \u2014 Concise management analysis that:\n- **Quantifies the portfolio**: $162.3M gross revenue on 116,620 bookings, $157.9M net (97.3% margin), 2.69% refund rate, 6.38% cancellation rate, 6.64 ROAS, 4.45 avg rating.\n- **Flags the dominant pattern**: severe H2 seasonality \u2014 H1 revenue ($96.7M) ran 32% above H2 ($65.6M); bookings swung 47% from April peak (12,661) to October trough (6,705), with all regions contracting in H2.\n- **Calls out the largest tradeoff:** marketing spend *rose* 25% Jan\u2192Dec even as revenue collapsed, degrading ROAS hardest in the trough (Paris at ~4.0 ROAS / 25% marketing ratio vs. Vancouver at 9.23 / 11%).\n- **Names material risks:** concentrated refund/cancel exposure at New York, Barcelona, Queenstown (roughly 2\u00d7 the leanest destinations); sub-4.3 ratings at high-volume Vancouver and Cape Town; ~48% of revenue riding the top four destinations.\n\n**`final/analysis.xlsx`** \u2014 a real workbook (OOXML, 194 KB, verified by reload), not a renamed CSV, with four sheets:\n1. **Raw Data** \u2014 all 144 records preserved exactly as sourced.\n2. **Destination Summary** \u2014 per-destination aggregates driven by live `SUMIF`/`AVERAGEIF`/`INDEX-MATCH` formulas over the raw sheet (bookings, gross/net revenue, refund & cancellation rates, marketing ratio, ROAS, rating, trip days).\n3. **Monthly Summary** \u2014 monthly formula-driven totals and marketing ratio.\n4. **Key Metrics** \u2014 portfolio totals/rates computed via formulas, plus formula-based benchmark lookups (top destination by revenue, by ROAS, most cancellations, lowest rating).\n\nNo charts, images, or extra files \u2014 `final/` contains exactly the two required deliverables. Verifying: `ls final/` shows only `report.txt` and `analysis.xlsx`, and the workbook opens cleanly via `openpyxl`.",
+      "final_response_source": "stdout.jsonl",
+      "manifest": {
+        "arm": "exp_claudecode_deepseek",
+        "check_id": "check1",
+        "configured_model": "deepseek/deepseek-v4-flash-0731",
+        "created_utc": "2026-08-20T13:27:19.914733Z",
+        "run_id": "matrix-20260820T132719Z-6a0bd4",
+        "task_sha256": "d7a66da607bb0209b79d524cddfbd78d307aa22a9d6d5cfa8bdfe30fa6f4c1dc"
+      },
+      "output_files": [
+        "analysis.xlsx",
+        "report.txt"
+      ],
+      "run_id": "matrix-20260820T132719Z-6a0bd4",
+      "start": {
+        "start_utc": "2026-08-20T13:27:19.916164Z",
+        "timeout_seconds": 3600
+      },
+      "usage": {
+        "actual_model": "deepseek/deepseek-v4-flash-0731",
+        "cache_creation_input_tokens": 0,
+        "cached_input_tokens": 713728,
+        "input_tokens": 71471,
+        "output_tokens": 21748,
+        "reasoning_output_tokens": null,
+        "reported_cost_usd": 1.2579190000000002,
+        "total_tokens": null
+      },
+      "verifier": {
+        "checks": {
+          "destination_summary_nontrivial": true,
+          "exact_deliverables": true,
+          "monthly_summary_nontrivial": true,
+          "no_broken_formula_refs": true,
+          "raw_headers": true,
+          "raw_row_count": true,
+          "reasonable_formula_count": true,
+          "report_present": true,
+          "required_sheets": true,
+          "source_preserved": true,
+          "workbook_present": true
+        },
+        "errors": [],
+        "formula_count": 268,
+        "pass": true,
+        "score": 100
+      }
+    },
+    "exp_codexcli_deepseek": {
+      "arm": "exp_codexcli_deepseek",
+      "end": {
+        "end_utc": "2026-08-20T13:35:26.933717Z",
+        "exit_code": 0,
+        "start_utc": "2026-08-20T13:27:19.917135Z",
+        "timed_out": false,
+        "timeout_seconds": 3600,
+        "wall_seconds": 487.016559775
+      },
+      "exit_code": "0",
+      "final_response": "Both final deliverables are complete and verified under `final/`.\n\n**Delivered**\n- `final/report.txt` \u2014 concise management analysis with quantified patterns, tradeoffs, and risks.\n- `final/analysis.xlsx` \u2014 four-sheet workbook: `Raw Data` (source preserved, numeric), `Destination Summary`, `Monthly Summary`, and `Key Metrics`.\n\n**Verification**\n- Both files exist and `final/` contains only these two deliverables.\n- The workbook opens cleanly (openpyxl load test passed); `Raw Data` has all 144 rows / 10 columns unchanged.\n- Summary sheets are formula-driven for totals and derived ratios (`SUMIF`/`AVERAGEIF`/arithmeetic references) rather than hard-coded values; Raw Data numeric columns are stored as numeric types.\n- No charts, pictures, or image assets are included.\n\nOne note: I couldn't run a live formula-recacalc here (no LibreOffice), but I independently recomputed every summary metric in Python and confirmed the formula ranges/results map correctly to the source data.",
+      "manifest": {
+        "arm": "exp_codexcli_deepseek",
+        "check_id": "check1",
+        "configured_model": "deepseek/deepseek-v4-flash-0731",
+        "created_utc": "2026-08-20T13:27:19.915293Z",
+        "run_id": "matrix-20260820T132719Z-6a0bd4",
+        "task_sha256": "d7a66da607bb0209b79d524cddfbd78d307aa22a9d6d5cfa8bdfe30fa6f4c1dc"
+      },
+      "output_files": [
+        "analysis.xlsx",
+        "report.txt"
+      ],
+      "run_id": "matrix-20260820T132719Z-6a0bd4",
+      "start": {
+        "start_utc": "2026-08-20T13:27:19.916048Z",
+        "timeout_seconds": 3600
+      },
+      "usage": {
+        "actual_model": null,
+        "cache_creation_input_tokens": null,
+        "cached_input_tokens": 1082880,
+        "input_tokens": 1250867,
+        "output_tokens": 26131,
+        "reasoning_output_tokens": 9,
+        "reported_cost_usd": null,
+        "total_tokens": null
+      },
+      "verifier": {
+        "checks": {
+          "destination_summary_nontrivial": true,
+          "exact_deliverables": true,
+          "monthly_summary_nontrivial": true,
+          "no_broken_formula_refs": true,
+          "raw_headers": true,
+          "raw_row_count": true,
+          "reasonable_formula_count": true,
+          "report_present": true,
+          "required_sheets": true,
+          "source_preserved": true,
+          "workbook_present": true
+        },
+        "errors": [],
+        "formula_count": 316,
+        "pass": true,
+        "score": 100
+      }
+    }
+  }
+}

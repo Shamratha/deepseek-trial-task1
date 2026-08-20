@@ -1,0 +1,130 @@
+{
+  "check3_source_lock_sha256": "cee8e2f0e97cf32b3609f81b75b729ae512b6f50a8081ebd8dedb46475d0ea6b",
+  "check3_team_lock_ready": false,
+  "created_utc": "2026-08-20T12:48:05.483628Z",
+  "deepseek_slug": "deepseek/deepseek-v4-flash-0731",
+  "environment": {
+    "captured_utc": "2026-08-20T12:48:05.483651Z",
+    "claude": "2.1.237 (Claude Code)",
+    "codex": "codex-cli 0.148.0",
+    "git": "git version 2.53.0",
+    "macos": null,
+    "python": "3.13.14",
+    "python_executable": "/tmp/deepseek-trial.TOPavP/.venv/bin/python",
+    "uname": "Linux HP-ENVY 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 "
+  },
+  "freeze_id": "b55b14155074c6a1",
+  "grader_manifest": [
+    {
+      "bytes": 47,
+      "path": "__init__.py",
+      "sha256": "474375a997f58f797374a43f807b4c04ab32f1ed75ab6d9e27eb6ebdf700c326"
+    },
+    {
+      "bytes": 197,
+      "path": "__pycache__/__init__.cpython-313.pyc",
+      "sha256": "3e3c9fac1d3597ea78ebe6fc77bdc975c35ea983477f2896e5e65d6c28ed4814"
+    },
+    {
+      "bytes": 7125,
+      "path": "__pycache__/check1_verify.cpython-313.pyc",
+      "sha256": "17ede7cf5f220b032c161387033f1a3fb02a50ed20031a99a58a496716142962"
+    },
+    {
+      "bytes": 6548,
+      "path": "__pycache__/check2_verify.cpython-313.pyc",
+      "sha256": "9617c68fd1c7f39a00c6d8ff42e9bbc2aff853519791e6711472f10db7d15f1d"
+    },
+    {
+      "bytes": 3746,
+      "path": "__pycache__/make_judge_packet.cpython-313.pyc",
+      "sha256": "9e5b3fe2e122479d80eb13ed4e5dbd947a95ff46d3e21c7fd918df09a270cab8"
+    },
+    {
+      "bytes": 3819,
+      "path": "check1_verify.py",
+      "sha256": "f9cf1d80ce0dbde0eadf5af28b8add11871ed0cd4cd80afda6b6871dababed35"
+    },
+    {
+      "bytes": 3174,
+      "path": "check2_verify.py",
+      "sha256": "b4131418bd69262ce5f8729d23bb57fc8d51b247fa9bbf98b2bd16186baa002d"
+    },
+    {
+      "bytes": 1009,
+      "path": "check3_verify_adapter.py",
+      "sha256": "4b412cba1a777b54ae7f255b151b4cce0dd4c89aff4ec8bc4f627ca93b651a2d"
+    },
+    {
+      "bytes": 2036,
+      "path": "make_judge_packet.py",
+      "sha256": "c09f2edd288453a5dfd7ef434d5efd47b4d49f69953c601d7ff67d855bf293a8"
+    },
+    {
+      "bytes": 300,
+      "path": "rubrics/check1.md",
+      "sha256": "372c4625f978f47470727bf41ec6b2c98d58cfe812a3cc7ee54bd84f2955ef02"
+    },
+    {
+      "bytes": 241,
+      "path": "rubrics/check2.md",
+      "sha256": "3077597c86b5035fab9103214b317db5e6b9f4026c4dca1223baf45d6992f4a0"
+    },
+    {
+      "bytes": 220,
+      "path": "rubrics/check3.md",
+      "sha256": "6c10ef1db91032a1451ffddf224cc396d19483860fd6907028251497bce48574"
+    },
+    {
+      "bytes": 2298,
+      "path": "run_judge.py",
+      "sha256": "48379b0852baa0d67160f8731929b7a7bbe7281cc95bca03a699cd8f32676f68"
+    }
+  ],
+  "input_manifests": {
+    "check1": [
+      {
+        "bytes": 281,
+        "path": "brief.txt",
+        "sha256": "b366838610bdadd29696b3a14bacc5c4c233ad20ebf5ba8347057723cf07f10b"
+      },
+      {
+        "bytes": 10465,
+        "path": "destination_performance.csv",
+        "sha256": "499587d2285a8b9c595b6b680854b5fd2aa93bb7324fc89e38f9cae3e015f5eb"
+      }
+    ],
+    "check2": [
+      {
+        "bytes": 276,
+        "path": "brief.txt",
+        "sha256": "96b1f1ed12921f3cb24a85ade667aa356895f5764cb3e616af5ecca8e25d2117"
+      },
+      {
+        "bytes": 10465,
+        "path": "destination_performance.csv",
+        "sha256": "499587d2285a8b9c595b6b680854b5fd2aa93bb7324fc89e38f9cae3e015f5eb"
+      },
+      {
+        "bytes": 551,
+        "path": "image_candidates.txt",
+        "sha256": "23287c70b214b48f89ab8bc4146a4ff56155f6daab6e3796315c5c5d9617b541"
+      }
+    ],
+    "check3": []
+  },
+  "judge_config_sha256": "6712f01029c7722a2c31aa1fd7d9ce9526bcce82e518cfc4d2c80a126a84c166",
+  "sanitized_claude_environment_sha256": "e6b76fc61ef0b8a7f065e467f95419a5e87bb305cd6ac21c3c7da546aa1ed97c",
+  "sanitized_codex_config_sha256": "c4c8aa0c1ae1ef6041281ede4e7fa1f6b927dc7ca6bdf75922bcabe9add06ed1",
+  "task_sha256": {
+    "check1": "d7a66da607bb0209b79d524cddfbd78d307aa22a9d6d5cfa8bdfe30fa6f4c1dc",
+    "check2": "51f424352e3a3dd19e6bec05d6727daec11e8be595548f050747cb2bd226c6ad",
+    "check3": null
+  },
+  "timeouts": {
+    "check1": 3600,
+    "check2": 3600,
+    "check3": null
+  },
+  "vision_model": "google/gemini-3.5-flash-lite"
+}

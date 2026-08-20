@@ -1,9 +1,9 @@
 {
-  "captured_utc": "2026-08-20T09:24:47.759888Z",
-  "claude": "2.1.228 (Claude Code)",
-  "codex": "codex-cli 0.147.0",
-  "git": "git version 2.50.1 (Apple Git-155)",
-  "macos": "26.4.1",
+  "captured_utc": "2026-08-20T12:43:47.502465Z",
+  "claude": "2.1.237 (Claude Code)",
+  "codex": "codex-cli 0.148.0",
+  "git": "git version 2.53.0",
+  "macos": null,
   "preflight": {
     "check3_team_lock": {
       "ok": false
@@ -30,10 +30,8 @@
       "ok": true
     },
     "control_auth": {
-      "errors": [
-        "CONTROL_CODEX_HOME is not set"
-      ],
-      "ok": false
+      "errors": [],
+      "ok": true
     },
     "curl_exists": {
       "ok": true
@@ -45,18 +43,18 @@
       "ok": true
     },
     "judge": {
-      "mode": "athena",
+      "mode": "gemini",
       "ok": false
     },
     "network": {
-      "ok": false,
-      "skipped": "OPENROUTER_API_KEY absent"
-    },
-    "openrouter_key": {
+      "error": "URLError",
       "ok": false
     },
+    "openrouter_key": {
+      "ok": true
+    },
     "python_3_11": {
-      "actual": "3.12.13",
+      "actual": "3.13.14",
       "ok": true
     },
     "vision": {
@@ -64,7 +62,7 @@
       "ok": false
     }
   },
-  "python": "3.12.13",
-  "python_executable": "/Users/lakshitsachdeva/Desktop/parsewave/deepseek-v4-harness-eval/.venv/bin/python",
-  "uname": "Darwin Lakshits-MacBook-Air.local 25.4.0 Darwin Kernel Version 25.4.0: Thu Mar 19 19:31:09 PDT 2026; root:xnu-12377.101.15~1/RELEASE_ARM64_T8132 arm64 arm"
+  "python": "3.13.14",
+  "python_executable": "/tmp/deepseek-trial.TOPavP/.venv/bin/python",
+  "uname": "Linux HP-ENVY 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 "
 }

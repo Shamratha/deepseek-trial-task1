@@ -39,9 +39,9 @@ def test_dataset_shape_and_seed_manifest():
     path = ROOT / "benchmarks/check1_text_excel/input/destination_performance.csv"
     with path.open(newline="") as handle:
         rows = list(csv.DictReader(handle))
-    assert len(rows) == 96
-    assert len({r["destination"] for r in rows}) == 8
-    assert json.loads((path.parent.parent / "manifest.json").read_text())["generator_seed"] == 20260820
+    assert len(rows) == 144
+    assert len({r["destination"] for r in rows}) == 12
+    assert json.loads((path.parent.parent / "manifest.json").read_text())["generator_seed"] == 20260731
 
 
 def test_workspace_copy_is_exact_and_isolated(tmp_path, monkeypatch):

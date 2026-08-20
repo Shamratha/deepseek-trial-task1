@@ -23,7 +23,7 @@ def main() -> None:
     shutil.copyfile(source, target)
     manifest = {
         "generator_seed": module.SEED,
-        "rows": 96,
+        "rows": len([1 for _ in target.open(newline="", encoding="utf-8")]) - 1,
         "sha256": hashlib.sha256(target.read_bytes()).hexdigest(),
         "shared_dataset_with": "check1",
         "image_candidates_verified_utc": "2026-08-20",

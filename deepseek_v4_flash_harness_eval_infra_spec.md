@@ -468,12 +468,12 @@ This benchmark is locally created because the assignment specifies a capability,
 
 ## 9.1 Dataset
 
-Generate deterministic `destination_performance.csv` using seed `20260820`.
+Generate deterministic `destination_performance.csv` using seed `20260731`.
 
 Suggested shape:
-- 8 destinations;
+- 12 destinations;
 - 12 months;
-- 96 rows.
+- 144 rows.
 
 Columns:
 
