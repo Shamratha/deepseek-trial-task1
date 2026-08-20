@@ -24,6 +24,7 @@ ARMS = ("control_native_codex", "exp_codexcli_deepseek", "exp_claudecode_deepsee
 CHECK_DIRS = {
     "check1": ROOT / "benchmarks/check1_text_excel",
     "check2": ROOT / "benchmarks/check2_visual_artifact",
+    "check2_hard": ROOT / "benchmarks/check2_hard",
     "check3": ROOT / "benchmarks/check3_e2e",
 }
 SECRET_NAME_RE = re.compile(r"(key|token|secret|password|auth)", re.I)
@@ -250,6 +251,7 @@ def arm_command(arm: str, workspace: Path, prompt: str, env: dict[str, str]) -> 
             "CLAUDE_CODE_SUBAGENT_MODEL": DEEPSEEK,
             "CLAUDE_CODE_SKIP_FAST_MODE_ORG_CHECK": "1",
             "CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY": "1",
+            "CLAUDE_CODE_MAX_CONTEXT_TOKENS": "1310720",
         })
         cmd = ["claude", "-p", "--model", DEEPSEEK, "--output-format", "stream-json",
                "--verbose", "--permission-mode", "bypassPermissions",

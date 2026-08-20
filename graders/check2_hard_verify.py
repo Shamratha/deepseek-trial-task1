@@ -15,7 +15,8 @@ except ImportError:
 
 def verify(output: Path, input_dir: Path) -> dict:
     workbook = output / "visual_brief.xlsx"
-    checks = {"exact_deliverables": output.exists() and {p.name for p in output.iterdir()} == {"visual_brief.xlsx"},
+    checks = {"exact_deliverables": output.exists() and {p.name for p in output.iterdir()} == {"visual_brief.xlsx", "README.txt"},
+              "readme_present": (output / "README.txt").is_file(),
               "workbook_present": workbook.is_file()}
     if openpyxl is None or not workbook.is_file():
         return {"pass": False, "score": 0, "checks": checks, "errors": ["workbook or openpyxl unavailable"]}
@@ -60,7 +61,7 @@ def verify(output: Path, input_dir: Path) -> dict:
     checks["summary_present"] = any(ws.max_row >= 8 and ws.max_column >= 3 for ws in wb.worksheets if ws not in raw_candidates)
     weights = {"exact_deliverables": 10, "workbook_present": 10, "zip_integrity": 10,
                "two_charts": 20, "two_embedded_images": 20, "sources_sheet": 10,
-               "candidate_urls": 10, "source_data_present": 5, "summary_present": 5}
+               "candidate_urls": 10, "source_data_present": 5, "summary_present": 5, "readme_present": 5}
     score = sum(v for k, v in weights.items() if checks.get(k))
     passed = score >= 90 and all(checks.get(k) for k in ("exact_deliverables", "two_charts", "two_embedded_images", "candidate_urls", "source_data_present"))
     return {"pass": passed, "score": score, "checks": checks, "errors": [],
